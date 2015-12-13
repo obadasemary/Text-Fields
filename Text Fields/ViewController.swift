@@ -28,8 +28,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         self.textField1.delegate = emojiDelegate
         self.textField2.delegate = colorizerDelegate
-        self.textField3.delegate = self
-        self.textField4.delegate = randomColorDelegate
+        self.textField3.delegate = randomColorDelegate
+        self.textField4.delegate = self
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
