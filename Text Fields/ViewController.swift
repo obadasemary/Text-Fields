@@ -8,18 +8,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
+
+    @IBOutlet weak var textField1: UITextField!
+    @IBOutlet weak var textField2: UITextField!
+    @IBOutlet weak var textField3: UITextField!
+    
+    @IBOutlet weak var characterCountLabel: UILabel!
+    
+    let emojiDelegate = EmojiTextFieldDelegate()
+    let colorizerDelegate = ColorizerTextFieldDelegate()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.characterCountLabel.hidden = true
+        
+        self.textField1.delegate = emojiDelegate
+        self.textField2.delegate = colorizerDelegate
+        self.textField3.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        var newText: NSString = textField.text!
+        newText = newText.stringByReplacingCharactersInRange(range, withString: string)
+        
+        self.characterCountLabel.hidden = (newText.length == 0)
+        
+        self.characterCountLabel.text = String(newText.length)
+        
+        return true
     }
-
-
 }
 

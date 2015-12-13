@@ -14,6 +14,8 @@
 		AF9119651C1D4CD2009BA0C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9119631C1D4CD2009BA0C3 /* LaunchScreen.storyboard */; };
 		AF9119701C1D4CD2009BA0C3 /* Text_FieldsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91196F1C1D4CD2009BA0C3 /* Text_FieldsTests.swift */; };
 		AF91197B1C1D4CD2009BA0C3 /* Text_FieldsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91197A1C1D4CD2009BA0C3 /* Text_FieldsUITests.swift */; };
+		AF91198A1C1D4FC7009BA0C3 /* EmojiTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9119891C1D4FC7009BA0C3 /* EmojiTextFieldDelegate.swift */; };
+		AF91198C1C1D4FD4009BA0C3 /* ColorizerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91198B1C1D4FD4009BA0C3 /* ColorizerTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		AF9119761C1D4CD2009BA0C3 /* Text FieldsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Text FieldsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF91197A1C1D4CD2009BA0C3 /* Text_FieldsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text_FieldsUITests.swift; sourceTree = "<group>"; };
 		AF91197C1C1D4CD2009BA0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9119891C1D4FC7009BA0C3 /* EmojiTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextFieldDelegate.swift; sourceTree = "<group>"; };
+		AF91198B1C1D4FD4009BA0C3 /* ColorizerTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizerTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		AF9119591C1D4CD2009BA0C3 /* Text Fields */ = {
 			isa = PBXGroup;
 			children = (
+				AF9119881C1D4F96009BA0C3 /* Text Field Delegates */,
 				AF91195A1C1D4CD2009BA0C3 /* AppDelegate.swift */,
 				AF91195C1C1D4CD2009BA0C3 /* ViewController.swift */,
 				AF91195E1C1D4CD2009BA0C3 /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				AF91197C1C1D4CD2009BA0C3 /* Info.plist */,
 			);
 			path = "Text FieldsUITests";
+			sourceTree = "<group>";
+		};
+		AF9119881C1D4F96009BA0C3 /* Text Field Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AF9119891C1D4FC7009BA0C3 /* EmojiTextFieldDelegate.swift */,
+				AF91198B1C1D4FD4009BA0C3 /* ColorizerTextFieldDelegate.swift */,
+			);
+			name = "Text Field Delegates";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF91198C1C1D4FD4009BA0C3 /* ColorizerTextFieldDelegate.swift in Sources */,
 				AF91195D1C1D4CD2009BA0C3 /* ViewController.swift in Sources */,
 				AF91195B1C1D4CD2009BA0C3 /* AppDelegate.swift in Sources */,
+				AF91198A1C1D4FC7009BA0C3 /* EmojiTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
