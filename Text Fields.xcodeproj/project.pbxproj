@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF4D32841C1EE3D700195385 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D32831C1EE3D700195385 /* ZipCodeTextFieldDelegate.swift */; };
+		AF4D32861C1EE4AB00195385 /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4D32851C1EE4AB00195385 /* CashTextFieldDelegate.swift */; };
 		AF91195B1C1D4CD2009BA0C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91195A1C1D4CD2009BA0C3 /* AppDelegate.swift */; };
 		AF91195D1C1D4CD2009BA0C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF91195C1C1D4CD2009BA0C3 /* ViewController.swift */; };
 		AF9119601C1D4CD2009BA0C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF91195E1C1D4CD2009BA0C3 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF4D32831C1EE3D700195385 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		AF4D32851C1EE4AB00195385 /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
 		AF9119571C1D4CD2009BA0C3 /* Text Fields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text Fields.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF91195A1C1D4CD2009BA0C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF91195C1C1D4CD2009BA0C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				AF9119891C1D4FC7009BA0C3 /* EmojiTextFieldDelegate.swift */,
 				AF91198B1C1D4FD4009BA0C3 /* ColorizerTextFieldDelegate.swift */,
 				AF9119911C1D7EA1009BA0C3 /* RandomColorTextFieldDelegate.swift */,
+				AF4D32831C1EE3D700195385 /* ZipCodeTextFieldDelegate.swift */,
+				AF4D32851C1EE4AB00195385 /* CashTextFieldDelegate.swift */,
 			);
 			name = "Text Field Delegates";
 			sourceTree = "<group>";
@@ -276,7 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4D32861C1EE4AB00195385 /* CashTextFieldDelegate.swift in Sources */,
 				AF91198C1C1D4FD4009BA0C3 /* ColorizerTextFieldDelegate.swift in Sources */,
+				AF4D32841C1EE3D700195385 /* ZipCodeTextFieldDelegate.swift in Sources */,
 				AF91195D1C1D4CD2009BA0C3 /* ViewController.swift in Sources */,
 				AF91195B1C1D4CD2009BA0C3 /* AppDelegate.swift in Sources */,
 				AF91198A1C1D4FC7009BA0C3 /* EmojiTextFieldDelegate.swift in Sources */,
@@ -507,6 +515,7 @@
 				AF9119811C1D4CD2009BA0C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF9119821C1D4CD2009BA0C3 /* Build configuration list for PBXNativeTarget "Text FieldsTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +524,7 @@
 				AF9119841C1D4CD2009BA0C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF9119851C1D4CD2009BA0C3 /* Build configuration list for PBXNativeTarget "Text FieldsUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +533,7 @@
 				AF9119871C1D4CD2009BA0C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
